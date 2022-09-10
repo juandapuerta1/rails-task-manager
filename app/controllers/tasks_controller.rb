@@ -1,6 +1,10 @@
 class TasksController < ApplicationController
 
-  def task
+  def index
     @task = Task.all
+  end
+
+  def show
+    @task = Task.find(params[:id])
   end
 end
