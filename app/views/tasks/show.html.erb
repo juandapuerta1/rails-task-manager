@@ -3,5 +3,10 @@
 <%= @task.title%>
 <%= @task.details%>
 <p>
-<%= link_to "Volver al listado", index_path%>
+<%= link_to "Volver al listado", tasks_path%>
+<p>
+<%= link_to "Editar esta tarea", edit_task_path(@task) %>
+</p>
+<p>
+<%= button_to "eliminar esta tarea", task_path, method: :delete %>
 </p>

@@ -1,7 +1,7 @@
 <h1>Hola mundo</h1>
-<% @task.each do |task| %>
+<% @tasks.each do |task| %>
   <li>
   <%= link_to task.title, task_path(task)  %>
   </li>
 <%end%>
-<p> <%=link_to "Add New task", new_path %> </p>
+<p> <%=link_to "Add New task", new_task_path %> </p>
